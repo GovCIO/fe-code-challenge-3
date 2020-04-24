@@ -1,68 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GovernmentCIO Code Challenge: 3
 
-## Available Scripts
+## Your mission, should you choose to accept! (User Stories)
 
-In the project directory, you can run:
+As a user, I want to be able to view all of the SpaceX launches between two dates I decide.
 
-### `yarn start`
+As a user, I want to be able to sort the SpaceX launches by their launch date (both ascending or descending).
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+--
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Your team is planning on this being a MVP, but they are planning on adding other features later on. Be sure to create everything with maintainability and scalability in mind. If you don't have enough time to build everything you want for this, be sure you document what you _would do_ if you did have enough time in a readme.
 
-### `yarn test`
+This challenge should take between 2-4 hours. If it is taking longer than 4 hours, don't panic! At GovernmentCIO we truly value your time so please just send us what you have been able to accomplish.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## What we're looking for
 
-### `yarn build`
+1. How well you document code
+1. How you architect a fresh React/Redux project
+1. How you set up Redux and [if you follow best practices](https://redux.js.org/style-guide/style-guide)
+1. How you choose dependencies and how you implement them
+1. How proficient you are with JavaScript, React, Redux, HTTP requests, styling, etc.
+1. How well your website runs against [Google Lighthouse audits](https://developers.google.com/web/tools/lighthouse)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Requirements
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. Create the boilerplate (we recommend using something like [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)).
+1. Update the website's title, meta tags, and favicon (be creative!).
+1. Set up any architecture you want, but **you must use and implement Redux** (and ideally utilize one or more Redux middleware libraries).
+1. When a user chooses a start date, an end date, and clicks a "Search" button, a request should be made to [the API endpoint `https://api.spacexdata.com/v3/launches`](https://docs.spacexdata.com/?version=latest).
+1. While waiting for a response from the API, we should show a loading design.
+1. Once we receive the response, we should show a list of all the results and store all fetched data in Redux.
+1. Once we receive the response, if there are no results, we should show a no-results design.
+1. The user should be able to sort the launches by their launch date.
+1. The user should be able to search again for a different date range.
+1. Please `git commit` early and often. Also, please do not squash commits as we enjoy seeing the evolution of the project!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The UI/UX is up to you, feel free to be as creative as you'd like! Rest assured that **you won't be penalized at all if you completely forgo styling** as we know it can be time-consuming.
 
-### `yarn eject`
+## Dependencies you should include
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. `react`
+1. `prop-types`
+1. `redux`
+1. `react-redux`
+1. `redux-thunk` or `redux-saga` or `redux-observable` or another Redux middleware library
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to submit the challenge
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+At GovernmentCIO, we ❤️ open-source and we know you do, too. Feel free to publish this project publicly on your GitHub and show it off in your portfolio!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You can submit the challenge either way:
 
-## Learn More
+#### Open-source GitHub repo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Send the link to the **public** GitHub repo in an email to [pshort@governmentcio.com](mailto:pshort@governmentcio.com?subject=Code%20challenge%203%20submission).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Emailing
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Remove the `node_modules` directory.
+1. Make sure you have commited everything.
+1. Zip the entire code challenge directory.
+1. Send the `code-challenge-3.zip` to [pshort@governmentcio.com](mailto:pshort@governmentcio.com?subject=Code%20challenge%203%20submission).
